@@ -20,7 +20,12 @@
         </div>
         <div class="media-content">
           <div class="content">
-            <p>{{title, status, date, review}}</p>
+            <p>
+              <strong>{{review['title']}}</strong>
+              <small>{{review['status']}}</small>
+              <small>{{review['date']}}</small>
+              {{review['review']}}
+            </p>
           </div>
         </div>
       </article>
